@@ -15,7 +15,7 @@ def postulantes():
   desaprobado = 0
   semidesaprobado = 0
 
-  comenzar = input("Digite 'comenzar'")
+  comenzar = input("Digite 'comenzar' ")
 
   if comenzar == "comenzar":
     while True:
@@ -27,9 +27,12 @@ def postulantes():
         semidesaprobado +=1
       else:
         desaprobado += 1
-      proc = input("Siguiente o salir?")
+      proc = input("Siguiente o salir? ")
       if proc == "salir":
         break
+  return f"Cantidad de aprobados: {aprobado}", f"Cantidad de desaprobados: {desaprobado}", f"Cantidad de semidesaprobados: {semidesaprobado}"
 
-postulantes()
+
+
+print(postulantes())
 
