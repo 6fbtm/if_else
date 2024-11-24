@@ -4,4 +4,28 @@ print("--- Bienvenido a la base de datos de notas ---")
 print("Ingrese la nota del alumno. Para salir, digite 'salir'")
 
 
+na = 0
+nb = 0
+nc = 0 
+nd = 0
+ds = 0
+
 while True:
+    nota = (input("Digite la nota del estudiante: "))
+    
+    if nota == "salir":
+        break
+    else:
+        nota = float(nota)
+        if nota >= 90:
+            na += 1
+        elif nota >= 80:
+            nb += 1
+        elif nota >= 70:
+            nc += 1
+        elif nota >= 60:
+            nd += 1
+        else:
+            ds += 1
+
+print(f"Los alumnos que sacaron nota A fueron: {na}, los que sacaron nota B fueron {nb}, los que sacaron nota C fueron {nb} y los que sacaron nota D fueron {nd}. {ds} alumno(s) reprobaron.")
